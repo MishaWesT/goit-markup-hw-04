@@ -27,7 +27,9 @@
         --portfolio-btn-hover-focus:#FFFFFF;
         --portfolio-btn-hover-focus-bg: #4D5AE5;
         --project-card-color: #2E2F42;
-        --contact-list-hover-focus-color:#404BBF;     
+        --contact-list-hover-focus-color:#404BBF;
+        --costumers-border:#8E8F99; 
+        --active-address-color:  #404BBF;    
 }
 
 body{
@@ -215,21 +217,66 @@ img {
 }
 
 .customers-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
 }
 
-.custom-heading {
-}
 
 .customers-list {
+        display: flex;
+        align-items: center;
+        gap: 24px;
 }
 
 .customers-item {
+        width: calc((100% - 5*24px) / 6);
+        height: 88px;
 }
 
 .customers-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border: 1px solid var(--costumers-border);
+        border-radius: 4px;
+        color: var(--costumers-border);
+}
+
+.customers-link:is(:hover, :focus) {
+        border-color: var(--active-address-color);
+        color: var(--active-address-color);
 }
 
 .customers-icon {
+        fill: currentColor;
+}
+
+.social-list {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin-bottom: 32px;
+}
+
+.social-item {
+        width: 40px;
+        height: 40px;
+}
+
+.social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: var(--button-background);
+}
+
+.social-link:hover, .social-link:focus {
+        background-color: var(--button-hover-background);
 }
 
 .footer{
@@ -240,24 +287,48 @@ img {
 }
 
 .last-block {
+        display: flex;
+        align-items: baseline;
+
 }
 
 .last-social {
+        margin-left: 120px;
 }
 
 .last-social-text {
+        margin-bottom: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--footer-text-color);
 }
 
 .last-social-list {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin: 0 auto;
 }
 
 .last-social-item {
+        width: 40px;
+        height: 40px; 
 }
 
 .last-social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color:rgba(255, 255, 255, 0.1);
 }
 
-.last-social-ikon {
+.last-social-link:hover,
+.last-social-link:focus {
+  background-color: #31D0AA;
 }
 
 .service-list{
@@ -311,7 +382,7 @@ img {
         color: var(--features-paragraf-color);
 }
 
-.title, .team-title{
+.title, .team-title, .custom-heading {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
@@ -359,7 +430,7 @@ img {
         letter-spacing: 0.02em;
         color: var(--job-color);
         text-align: center;
-        margin-bottom: 32px;
+        margin-bottom: 8px;
 }
 
 .type-product{
