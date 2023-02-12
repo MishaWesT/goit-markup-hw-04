@@ -214,11 +214,50 @@ img {
         color: var(--footer-text-color);
 }
 
+.customers-section {
+}
+
+.custom-heading {
+}
+
+.customers-list {
+}
+
+.customers-item {
+}
+
+.customers-link {
+}
+
+.customers-icon {
+}
+
 .footer{
         margin-right: 0;
         padding-top: 100px;
         padding-bottom: 100px;
         background-color: var(--footer-background-color);
+}
+
+.last-block {
+}
+
+.last-social {
+}
+
+.last-social-text {
+}
+
+.last-social-list {
+}
+
+.last-social-item {
+}
+
+.last-social-link {
+}
+
+.last-social-ikon {
 }
 
 .service-list{
